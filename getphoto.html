@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取用户头像</title>
+    <style type="text/css">
+        #photoImg{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <img id="photoImg" src="" alt="头像">
+    <script type="text/javascript">
+        var photoBase64 = localStorage.getItem('photo');
+        var img = document.querySelector('#photoImg');
+        img.src = photoBase64;
+    </script>
+</body>
+</html>
